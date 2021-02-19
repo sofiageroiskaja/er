@@ -1,0 +1,56 @@
+body{
+    margin:0;
+}
+
+input[type=text]{
+    width: calc(100% - 50px);
+    margin: 4px 3px;
+    padding: 14px 20px;
+    border: 1px solid rgb(18, 189, 219);
+    /*border-width: 2px;*/
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(18, 189, 219);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#loadLocal{
+    background-color: cornflowerblue;
+}
+
+#loadLocal:hover{
+    background-color: aqua;
+}
+
+#deleteLocal{
+    background-color: coral;
+}
+
+#deleteLocal:hover{
+    background-color: rgb(243, 178, 39);
+}
+
+#dataContainer{
+    background-color: rgb(140, 148, 150);
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width:600px){
+    #buttoncontainer{
+        flex-direction: column;
+    }
+}
