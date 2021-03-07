@@ -65,9 +65,10 @@ body{
 .time:hover{
     color: crimson;
 }
-.author{
+.link{
     position: absolute;
-    margin-bottom: 650px;
+    margin-top: 305px;
+    margin-left: 290px;
 }
 button{
     border: #1f1f1f solid 2px;

@@ -30,10 +30,6 @@ function startClock(){
     setInterval(startClock, 100);
 });
 
-function change_source(){
-    document.getElementById("source").innerHTML = "Sofia Geroiskaja";
-};
-
 function display_corona(){
     var coronaStart = new Date('12/31/2019');
     var today = new Date();
