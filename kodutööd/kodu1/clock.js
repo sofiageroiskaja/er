@@ -27,7 +27,7 @@ function startClock(){
 }
   
   window.addEventListener('load', (event) => {
-      setInterval(startClock, 100);
+    setInterval(startClock, 100);
 });
 
 function change_source(){
