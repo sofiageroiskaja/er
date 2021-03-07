@@ -1,7 +1,7 @@
 Mina, Sofia Geroiskaja tegin kella näidet. Tegin kolm faili: clock.html, clock.css ja clock.js. 
 Minu kell asub keset ekraani ja on teistest elementidest eraldatud borderiga. 
 Kell näitab kella, kuupäeva, nädalapäeva ja aastat. 
-Kella all on 2 nuppu ja 1 link, vasaku nuppule vajudes randomselt vahetub tausta värv, teisele nuppule vajutades saab teada mitu päeva on möödunud koroona algusest 
+Kella all on 2 nuppu ja 1 link, vasaku nuppule vajutades randomselt vahetub tausta värv, teisele nuppule vajutades saab teada mitu päeva on möödunud koroona algusest 
 ja lingile klõpsates minnakse kodutöö repositooriumile. Lehe all on kirjutatud et Sofia Geroiskaja on autor. 
 Kui hõljutada hiirt kella peale siis tausta värv muutub valgeks ja teksti värv mustaks.
 Kui hõljutada hiirt nädalapäeva, kuupäeva, aasta või kella peale siis teksti värv muutub.
