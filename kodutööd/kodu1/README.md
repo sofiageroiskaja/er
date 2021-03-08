@@ -1,3 +1,5 @@
+<img width="1347" alt="clock" src="https://user-images.githubusercontent.com/70939482/110291125-3c93d080-7ff4-11eb-9b14-017d52820834.png">
+<img width="1264" alt="clock1" src="https://user-images.githubusercontent.com/70939482/110291130-3d2c6700-7ff4-11eb-922d-e9b56d291818.png">
 Mina, Sofia Geroiskaja tegin kella näidet. Tegin kolm faili: clock.html, clock.css ja clock.js. 
 Minu kell asub keset ekraani ja on teistest elementidest eraldatud borderiga. 
 Kell näitab kella, kuupäeva, nädalapäeva ja aastat. 
