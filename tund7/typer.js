@@ -10,14 +10,28 @@ class Typer{
         this.wordsTyped = 0;
         this.startTime = 0;
         this.endTime = 0;
-        this.results = JSON.parse(localStorage.getItem('score')) || [];
+        this.results = [];
         this.word;
         this.init();
+    }
+
+    loadFromFile(){
+        $.get('database.txt', (data) => {
+            let content = JSON.parse(data).content;
+            console.log(data);
+            localStorage.setItem('score', JSON.stringify(content));
+            this.init();
+        }).done();
     }
 
     init(){
         $.get("lemmad2013.txt", (data)=>this.getWords(data));
         $('#show-results').on('click', ()=>{this.showResults();});
+        if(localStorage.getItem('score')){
+            this.results = JSON.parse(localStorage.getItem('score'));
+        } else{
+            console.log('Else see')
+        }
     }
 
     startTyper(){
@@ -51,6 +65,14 @@ class Typer{
         this.results.push(result);
         this.results.sort((a, b) => parseFloat(a.time) - parseFloat(b.time));
         localStorage.setItem('score', JSON.stringify(this.results));
+
+        $.post('server.php', {save: this.results}).done(function(){
+            console.log('Success');
+        }).fail(function(){
+            alert('Fail');
+        }).always(function(){
+            console.log("Tegime midagi AJAXiga");
+        });
     }
 
     generateWords(){
@@ -68,6 +90,7 @@ class Typer{
     selectWord(){
         this.word = this.typeWords[this.wordsTyped];
         this.drawWord();
+        this.showInfo();
     }
 
     drawWord(){
@@ -98,6 +121,10 @@ class Typer{
     showResults(){
         $('#results').fadeToggle();
         console.log('toon peidust välja')
+    }
+
+    showInfo(){
+        $('#info').html(this.wordsTyped + "/" + this.wordsInGame);
     }
 }
 

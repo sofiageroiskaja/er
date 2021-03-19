@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#info{
+    position: absolute;
+    font-size: 5vw;
+}
+
+#score{
+    font-size: 4vw;
+    color: cadetblue;
+    margin-bottom: 50px;
+}
+
+#wordDiv{
+    font-size: 5vw;
+}
+
+#show-results{
+    position: absolute;
+    right: 0;
+    background-color: darkcyan;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#show-results:hover{
+    background-color: cadetblue ;
+}
+
+#results{
+    display: none;
+    position: absolute;
+    background-color: darkcyan;
+    width: 100vw;
+    height: 100vh;
+    padding: 5%;
+    text-align: center;
+    font-size: 25px;
+}
