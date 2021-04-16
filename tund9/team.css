@@ -1,0 +1,126 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: rgb(39, 39, 39);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  line-height: 1.5;
+}
+
+h1, h2, p{
+  color: rgb(39, 39, 39);
+  text-align: center;
+}
+
+iframe {
+  width: 600px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.y_video{
+  padding-bottom: 20px;
+}
+
+h1{
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: -30px;
+  box-shadow: 0 0 2px rgb(151, 243, 243);
+}
+
+.wrapper {
+  height: 65%;
+  background-color: rgb(151, 243, 243);
+  border-radius: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(151, 243, 243);
+}
+
+.btn {
+  width: 10px;
+  height: 10px;
+  margin: 20px 12px;
+  z-index: 10;
+  cursor: pointer;
+  outline: 8px solid rgb(255, 246, 246);
+  outline-offset: -6px;
+}
+
+
+.btn:checked {
+  animation: check 0.4s linear forwards;
+}
+.btn:checked:nth-of-type(1) ~ .slider{
+  left: 0%;
+}
+.btn:checked:nth-of-type(2) ~ .slider {
+  left: -100%;
+}
+.btn:checked:nth-of-type(3) ~ .slider{
+  left: -200%;
+}
+.btn:checked:nth-of-type(4) ~ .slider{
+  left: -300%;
+}
+
+.slider{
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  transition: left 0.4s;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.slide{
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.info {
+  color: rgb(39, 39, 39);
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+@keyframes check {
+  50% {
+    outline-color: rgb(78, 149, 151);
+  }
+  100% {
+    outline-color: rgb(53, 103, 107);
+  }
+}
