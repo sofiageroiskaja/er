@@ -8,7 +8,7 @@ body{
 }
   
 #container{
-    width: 900px;
+    width: 700px;
     margin: 70px auto;
 }
   
@@ -18,7 +18,7 @@ a{
 }
   
 #calculator{
-    font-size: 20px;
+    font-size: 16px;
     display: block;
     width: 49%;
     float: left;
@@ -30,7 +30,7 @@ a{
 }
 
 button, input, #total{
-    font-size: 20px;
+    font-size: 16px;
     padding: 10px;
 }
 
@@ -58,7 +58,7 @@ button, input, #total{
     display: block;
     border: 1px solid #60b3aa;
     border-radius: 10px;
-    font-size: 30px;
+    font-size: 18px;
     background: #fffdfd;
     text-align: right;
     margin-bottom: 20px;
@@ -102,7 +102,7 @@ button:hover{
     border: 1px solid #60b3aa;
     border-radius: 20px;
     position: relative;
-    height: 478px;
+    height: 417px;
 }
 
 #memory_clear{
@@ -112,13 +112,13 @@ button:hover{
 
 #default{
     margin-top: 10px;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     color: black;
 }
 
 ul{
-    height: 476px;
+    height: 415px;
     overflow-y: scroll;
     list-style: none;
     background: #79e7dc;
@@ -148,22 +148,18 @@ ul li{
 
 .equation, .answer{
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 .answer{
     position: absolute;
     right: 57px;
     top: 0;
-    background: #1a5c54;
-}
-
-.use{
-    background: #717c7b;
+    background: #2fa799;
 }
 
 .use a{
-    background: #2fa799;
+    background: #38c5b5;
     position: absolute;
     right: 0;
     top: 0;

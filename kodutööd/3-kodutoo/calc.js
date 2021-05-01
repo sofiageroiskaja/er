@@ -251,7 +251,7 @@ function log(i){
   var s = Math.log(i);
   answer = s;
   loop(s);
-  newResult('','log',i,s);
+  newResult('','ln',i,s);
   display.text(answer);
   is_sub = true;
   first_b = true;

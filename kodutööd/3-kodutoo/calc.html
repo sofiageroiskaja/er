@@ -11,22 +11,34 @@
     <style>
       .night_mode {
         background-color: black;
-        color: #79e7dc;
+        color: #60b3aa;
       }
       #night{
         font-size: 12px;
         width: 70px;
+        background-color: #fffdfd;
+        color: black;
       }
-      #repo, #memory_clear{
+      #memory_clear{
         color: #60b3aa;
+        font-size: 16px;
+      }
+      .header {
+        padding-top: 10px;
+        padding-bottom: 50px;
+        text-align: center;
+        background: #60b3aa;
+        color: white;
+        font-size: 16px;
       }
     </style>
 </head>
 <body>
-  <header>
+  <div class="header">
     <p>Autor: Sofia Geroiskaja<p>
     <p><a id="repo" href="https://github.com/sofiageroiskaja/3-kodutoo">Repo link</a></p> 
-  </header>
+    <button id="night" onclick="nightMode()">Night</button>
+    </div>
   <div id="container">
     <div id="calculator">
       <div id="display">
@@ -82,7 +94,6 @@
       <a id="memory_clear" href="#">Delete Memory</a>
     </div>
   </div>
-  <button id="night" onclick="nightMode()">Night</button>
   <script>
     function nightMode() {
        var e = document.body;
